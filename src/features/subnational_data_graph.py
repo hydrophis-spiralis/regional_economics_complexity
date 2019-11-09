@@ -37,8 +37,10 @@ def merge_regional_data(world_data:pd.DataFrame,
 
         if row.dest == base_country_name:
             region_hs_import = region_foreign_import[region_foreign_import.origin == row.origin]
-            if len(region_hs_import ) > 0:
+            if len(region_hs_import) > 0:
                 row.export_val -= region_hs_import.export_val.values[0]
+
+
 
     world_data_with_region = world_data\
         .append(region_foreign_import, sort=False)\
