@@ -1,3 +1,6 @@
+## aux script for data forming
+
+
 import numpy as np
 import pandas as pd
 import tqdm

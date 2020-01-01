@@ -4,7 +4,6 @@ import pandas as pd
 from src.models.ecomplexity_model import EconomicDataModel
 import pickle as pkl
 import numpy as np
-import scipy
 
 project_dir = Path(__file__).resolve().parents[1]
 raw_dir = os.path.join(project_dir, 'data', 'raw')
